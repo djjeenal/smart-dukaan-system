@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Super Admin Access</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.panel h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.panel .subtitle {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 26px;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+.back-btn {
+  width: 100%;
+  margin-top: 16px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.45);
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.note {
+  margin-top: 18px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+  <h2>Super Admin</h2>
+  <div class="subtitle">Restricted Master Access</div>
+
+  <label>Master ID</label>
+  <input type="text" placeholder="Enter Master ID">
+
+  <label>Master Password</label>
+  <input type="password" placeholder="Enter Master Password">
+
+  <button class="login-btn">Access Panel</button>
+
+  <button class="back-btn" onclick="location.href='index.html'">
+    ⬅ Back to Home
+  </button>
+
+  <div class="note">
+    This panel is hidden from normal users
+  </div>
+</div>
+
+</body>
+</html>
