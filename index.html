@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Dukaan – Secure Access</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+.container{
+  width:100%;
+  max-width:420px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius:18px;
+  padding:32px 24px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.4);
+  text-align:center;
+}
+.logo{
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:6px;
+}
+.subtitle{
+  font-size:14px;
+  opacity:0.85;
+  margin-bottom:28px;
+}
+.role-btn{
+  width:100%;
+  padding:15px;
+  margin-bottom:16px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+.admin{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:#fff;
+}
+.admin:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(255,152,0,0.4);
+}
+.superadmin{
+  background:linear-gradient(135deg,#7f00ff,#e100ff);
+  color:#fff;
+}
+.superadmin:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(225,0,255,0.4);
+}
+.note{
+  font-size:12px;
+  opacity:0.7;
+  margin-top:20px;
+}
+.footer{
+  margin-top:18px;
+  font-size:11px;
+  opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="logo">SMART DUKAAN</div>
+  <div class="subtitle">Secure Business Management System</div>
+
+  <button class="role-btn admin" onclick="goAdmin()">
+    Continue as Admin
+  </button>
+
+  <button class="role-btn superadmin" onclick="goSuperAdmin()">
+    Continue as Super Admin
+  </button>
+
+  <div class="note">
+    Customers must scan shop QR to access ordering system
+  </div>
+
+  <div class="footer">
+    © 2026 Smart Dukaan • Premium Plus Professional
+  </div>
+</div>
+
+<script>
+function goAdmin(){
+  window.location.href = "admin-login.html";
+}
+function goSuperAdmin(){
+  window.location.href = "superadmin-login.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login – Smart Dukaan</title>
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#232526,#414345);
+  font-family:Segoe UI, Arial;
+  color:#fff;
+}
+.box{
+  width:100%;
+  max-width:380px;
+  background:rgba(255,255,255,0.08);
+  padding:28px;
+  border-radius:16px;
+  backdrop-filter:blur(10px);
+}
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+input{
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border:none;
+  border-radius:10px;
+  font-size:15px;
+}
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+}
+.login{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:#fff;
+}
+.back{
+  margin-top:10px;
+  background:#444;
+  color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Admin Login</h2>
+
+  <input type="text" placeholder="Admin Mobile">
+  <input type="password" placeholder="PIN">
+
+  <button class="login">Login</button>
+  <button class="back" onclick="goBack()">⬅ Back</button>
+</div>
+
+<script>
+function goBack(){
+  window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
