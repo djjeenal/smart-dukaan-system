@@ -42,6 +42,9 @@
       opacity:0.8;
       margin:10px 0 25px;
     }
+    a{
+      text-decoration:none;
+    }
     button{
       width:100%;
       padding:14px;
@@ -69,9 +72,17 @@
     <h1>SMART DUKAAN</h1>
     <p>Self-Order • Wallet • UPI • Udhari System</p>
 
-    <button class="user">Continue as Customer</button>
-    <button class="admin">Continue as Admin</button>
-    <button class="super">Continue as Super Admin</button>
+    <a href="customer-entry.html">
+      <button class="user">Continue as Customer</button>
+    </a>
+
+    <a href="admin-login.html">
+      <button class="admin">Continue as Admin</button>
+    </a>
+
+    <a href="super-login.html">
+      <button class="super">Continue as Super Admin</button>
+    </a>
 
     <div class="note">
       QR Scan → Order → Pay → Enjoy
