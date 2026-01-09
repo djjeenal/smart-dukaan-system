@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Dukaan – Premium System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      color:#fff;
+    }
+    .box{
+      width:90%;
+      max-width:420px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(14px);
+      border-radius:20px;
+      padding:30px;
+      text-align:center;
+      box-shadow:0 20px 50px rgba(0,0,0,0.4);
+    }
+    h1{
+      font-size:30px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+    p{
+      font-size:14px;
+      opacity:0.8;
+      margin:10px 0 25px;
+    }
+    button{
+      width:100%;
+      padding:14px;
+      margin:10px 0;
+      border:none;
+      border-radius:14px;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .user{background:#00c6ff;color:#002;}
+    .admin{background:#f7971e;color:#3a1c00;}
+    .super{background:#ff416c;color:#3b0015;}
+    .note{
+      margin-top:15px;
+      font-size:12px;
+      opacity:0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>SMART DUKAAN</h1>
+    <p>Self-Order • Wallet • UPI • Udhari System</p>
+
+    <button class="user">Continue as Customer</button>
+    <button class="admin">Continue as Admin</button>
+    <button class="super">Continue as Super Admin</button>
+
+    <div class="note">
+      QR Scan → Order → Pay → Enjoy
+    </div>
+  </div>
+
+</body>
+</html>
