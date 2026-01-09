@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Dukaan™ | Premium Business System</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #061a2d, #0b3c4a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .main-card {
+      width: 92%;
+      max-width: 420px;
+      padding: 32px 26px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      text-align: center;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .title span {
+      color: #21e6ff;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #d6e9ef;
+    }
+
+    .divider {
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      border-radius: 10px;
+      margin: 18px auto;
+    }
+
+    .features {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #e3f3f7;
+      margin-bottom: 26px;
+    }
+
+    .features span {
+      display: block;
+    }
+
+    .primary-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      box-shadow: 0 8px 20px rgba(0, 114, 255, 0.35);
+    }
+
+    .primary-btn:active {
+      transform: scale(0.98);
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #b7d3db;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 11px;
+      color: #94b8c1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-card">
+    <div class="title">Smart <span>Dukaan™</span></div>
+    <div class="subtitle">Premium Shop Management Platform</div>
+
+    <div class="divider"></div>
+
+    <div class="features">
+      <span>• Multi-Shop Ready</span>
+      <span>• Secure Role-Based Access</span>
+      <span>• Wallet • UPI • Udhar System</span>
+    </div>
+
+    <button class="primary-btn" onclick="goAdmin()">
+      Continue as Admin
+    </button>
+
+    <div class="note">
+      Customers must scan shop QR to access ordering system
+    </div>
+
+    <div class="footer">
+      Enterprise-Grade Business Software<br/>
+          © 2026 Smart Dukaan • Premium Plus Professional
+    </div>
+  </div>
+
+  <script>
+    function goAdmin() {
+      window.location.href = "admin-login.html";
+    }
+  </script>
+
+</body>
+</html>
