@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Super Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+.header{
+  padding:18px;
+  text-align:center;
+  font-size:20px;
+  font-weight:600;
+  background:rgba(0,0,0,0.25);
+  backdrop-filter:blur(6px);
+}
+
+.container{
+  padding:18px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:16px;
+  margin-bottom:28px;
+}
+
+.card{
+  background:rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,0.4);
+}
+
+.card h3{
+  margin:0;
+  font-size:14px;
+  opacity:0.85;
+}
+
+.card p{
+  margin:10px 0 0;
+  font-size:24px;
+  font-weight:700;
+}
+
+.section{
+  margin-bottom:30px;
+}
+
+.section h2{
+  font-size:16px;
+  margin-bottom:14px;
+  opacity:0.9;
+}
+
+.btn-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+}
+
+.btn{
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,#1e90ff,#00bfff);
+  box-shadow:0 8px 20px rgba(0,0,0,0.45);
+}
+
+.btn.secondary{
+  background:linear-gradient(135deg,#6c757d,#495057);
+}
+
+.btn.danger{
+  background:linear-gradient(135deg,#dc3545,#b02a37);
+}
+
+.footer{
+  text-align:center;
+  padding:18px;
+}
+
+.logout{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.5);
+  color:#fff;
+  padding:12px 26px;
+  border-radius:14px;
+  font-size:14px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  👑 Super Admin Dashboard
+</div>
+
+<div class="container">
+
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Shops</h3>
+      <p>0</p>
+    </div>
+    <div class="card">
+      <h3>Total Admins</h3>
+      <p>0</p>
+    </div>
+    <div class="card">
+      <h3>Active Licenses</h3>
+      <p>0</p>
+    </div>
+  </div>
+
+  <!-- ADMIN MANAGEMENT -->
+  <div class="section">
+    <h2>Admin Management</h2>
+    <div class="btn-grid">
+      <button class="btn">Create New Admin</button>
+      <button class="btn secondary">Admin List</button>
+      <button class="btn danger">Block / Unblock Admin</button>
+    </div>
+  </div>
+
+  <!-- SHOP MANAGEMENT -->
+  <div class="section">
+    <h2>Shop Management</h2>
+    <div class="btn-grid">
+      <button class="btn">Create New Shop</button>
+      <button class="btn secondary">Shop List</button>
+      <button class="btn">Assign Admin to Shop</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <button class="logout" onclick="location.href='index.html'">
+    Logout
+  </button>
+</div>
+
+</body>
+</html>
